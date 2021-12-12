@@ -11,22 +11,20 @@
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./css/modern-normalize.css" />
-		<!-- <link rel="stylesheet" href="./css/styles.css" /> -->
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
 		<header class="header header-border">
 			<div class="flex-nav container">
 				<nav class="left-nav">
-					<a href="" lang="en" class="logo link">
+					<a href="" lang="en" class="logo logo-nav link">
 						Web
-						<span class="logo--accent">Studio</span>
+						<span class="logo-nav--accent">Studio</span>
 					</a>
 
 					<ul class="left-nav-menu">
 						<li class="list menu-item">
-							<a href="./index.html" class="link menu-item__text current">Студия</a>
+							<a href="./index.html" class="link menu-item__text menu-item__text--current">Студия</a>
 						</li>
 						<li class="list menu-item">
 							<a href="./portfolio.html" class="link menu-item__text">Портфолио</a>
@@ -64,7 +62,7 @@
 						<br />
 						для вашего бизнеса
 					</h1>
-					<button data-modal-open type="button" class="hero-button">Заказать услугу</button>
+					<button data-modal-open type="button" class="button hero-button">Заказать услугу</button>
 				</div>
 			</section>
 
@@ -355,7 +353,7 @@
 			<div class="container footer-wrap-all">
 				<div class="footer-wrap-left">
 					<div>
-						<a href="./index.html" lang="en" class="footer-logo link">
+						<a href="./index.html" lang="en" class="footer-logo logo link">
 							Web
 							<span class="footer-logo--accent">Studio</span>
 						</a>
@@ -410,7 +408,7 @@
 						<p class="footer-form__label">Подпишитесь на рассылку</p>
 						<div class="footer-form__wrap input-wrap">
 							<input class="input-wrap__input" type="email" placeholder="E-mail" name="subscribe" />
-							<button class="input-wrap__btn" type="submit">
+							<button class="button input-wrap__btn" type="submit">
 								Подписаться
 								<svg class="send-icon" width="24" height="24">
 									<use href="./images/icons.svg#send"></use>
@@ -469,7 +467,7 @@
 					</label>
 					<div class="policy-container">
 						<label class="policy-label">
-							<input class="policy-label_checkbox visually-hidden" type="checkbox" name="policy" value="accept" />
+							<input class="policy-label__checkbox visually-hidden" type="checkbox" name="policy" value="accept" />
 							<svg class="policy-label__checkbox-new" width="16" height="15">
 								<use href="./images/icons.svg#icon-check"></use>
 							</svg>
@@ -479,7 +477,7 @@
 							</span>
 						</label>
 					</div>
-					<button class="btn-submit" type="submit">Отправить</button>
+					<button class="button btn-submit" type="submit">Отправить</button>
 				</form>
 			</div>
 		</div>

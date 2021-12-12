@@ -1,3 +1,266 @@
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*
+Document
+========
+*/
+/**
+Use a better box model (opinionated).
+*/
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/**
+1. Correct the line height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size (opinionated).
+*/
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+}
+
+/*
+Sections
+========
+*/
+/**
+1. Remove the margin in all browsers.
+2. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+*/
+body {
+  margin: 0;
+  /* 1 */
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  /* 2 */
+}
+
+/*
+Grouping content
+================
+*/
+/**
+1. Add the correct height in Firefox.
+2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+*/
+hr {
+  height: 0;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+}
+
+/*
+Text-level semantics
+====================
+*/
+/**
+Add the correct text decoration in Chrome, Edge, and Safari.
+*/
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+/**
+Add the correct font weight in Edge and Safari.
+*/
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+2. Correct the odd 'em' font sizing in all browsers.
+*/
+code,
+kbd,
+samp,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+Add the correct font size in all browsers.
+*/
+small {
+  font-size: 80%;
+}
+
+/**
+Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+*/
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/*
+Tabular data
+============
+*/
+/**
+1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+*/
+table {
+  text-indent: 0;
+  /* 1 */
+  border-color: inherit;
+  /* 2 */
+}
+
+/*
+Forms
+=====
+*/
+/**
+1. Change the font styles in all browsers.
+2. Remove the margin in Firefox and Safari.
+*/
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+Remove the inheritance of text transform in Edge and Firefox.
+*/
+button,
+select {
+  text-transform: none;
+}
+
+/**
+Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+Remove the inner border and padding in Firefox.
+*/
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+Restore the focus styles unset by the previous rule.
+*/
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+Remove the additional ':invalid' styles in Firefox.
+See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+*/
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+/**
+Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
+*/
+legend {
+  padding: 0;
+}
+
+/**
+Add the correct vertical alignment in Chrome and Firefox.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+1. Correct the odd appearance in Chrome and Safari.
+2. Correct the outline style in Safari.
+*/
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to 'inherit' in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*
+Interactive
+===========
+*/
+/*
+Add the correct display in Chrome and Safari.
+*/
+summary {
+  display: list-item;
+}
+
 :root {
   --title-text-color: #212121;
   --primary-text-color: #757575;
@@ -46,20 +309,6 @@ img {
           box-sizing: border-box;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -88,7 +337,21 @@ img {
   padding-bottom: 94px;
 }
 
-/* -------site-nav------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* -------Index------- */
 .header-border {
   border-bottom: 1px solid #ececec;
 }
@@ -128,26 +391,6 @@ img {
   margin-left: 50px;
 }
 
-.logo {
-  padding: 24px 0;
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
-  color: var(--accent-color);
-}
-
-.logo--accent {
-  color: var(--title-text-color);
-  -webkit-transition: color var(--animation-duration) var(--timing-function);
-  transition: color var(--animation-duration) var(--timing-function);
-}
-
-.logo:hover .logo--accent,
-.logo:focus .logo--accent {
-  color: var(--accent-color);
-}
-
 .menu-item__text {
   display: block;
   padding: 32px 0;
@@ -160,9 +403,22 @@ img {
   transition: color var(--animation-duration) var(--timing-function);
 }
 
-.menu-item__text:hover,
-.menu-item__text:focus {
+.menu-item__text:hover, .menu-item__text:focus {
   color: var(--accent-color);
+}
+
+.menu-item__text--current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
 }
 
 .contact-content__icon {
@@ -193,25 +449,141 @@ img {
   color: var(--accent-color);
 }
 
-.menu-item__text.current::after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-color);
-}
-
 .contact-item:not(:first-child) {
   margin-left: 30px;
 }
 
-/* -------hero------- */
+.logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.logo-nav {
+  padding: 24px 0;
+}
+
+.logo-nav--accent {
+  color: var(--title-text-color);
+  -webkit-transition: color var(--animation-duration) var(--timing-function);
+  transition: color var(--animation-duration) var(--timing-function);
+}
+
+.logo-nav:hover .logo-nav--accent,
+.logo-nav:focus .logo-nav--accent {
+  color: var(--accent-color);
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-logo--accent {
+  color: var(--primary-white-color);
+  -webkit-transition: color var(--animation-duration) var(--timing-function);
+  transition: color var(--animation-duration) var(--timing-function);
+}
+
+.footer-logo:hover .footer-logo--accent,
+.footer-logo:focus .footer-logo--accent {
+  color: var(--accent-color);
+}
+
+.button {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  border: none;
+  border-radius: 4px;
+}
+
+.hero-button {
+  display: block;
+  padding: 10px 32px;
+  margin: auto;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  -webkit-transition: background-color var(--animation-duration) var(--timing-function);
+  transition: background-color var(--animation-duration) var(--timing-function);
+}
+
+.hero-button:hover, .hero-button:focus {
+  background-color: var(--accent-color-hover);
+}
+
+.input-wrap__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: var(--accent-color);
+  outline-color: transparent;
+  -webkit-transition: outline-color var(--animation-duration) var(--timing-function);
+  transition: outline-color var(--animation-duration) var(--timing-function);
+}
+
+.btn-submit:focus {
+  outline-color: var(--accent-color);
+}
+
+.work-button {
+  padding: 6px 22px;
+  font-weight: 500;
+  line-height: 1.62;
+  -webkit-transition: background-color var(--animation-duration) var(--timing-function), color var(--animation-duration) var(--timing-function), -webkit-box-shadow var(--animation-duration) var(--timing-function);
+  transition: background-color var(--animation-duration) var(--timing-function), color var(--animation-duration) var(--timing-function), -webkit-box-shadow var(--animation-duration) var(--timing-function);
+  transition: background-color var(--animation-duration) var(--timing-function), color var(--animation-duration) var(--timing-function), box-shadow var(--animation-duration) var(--timing-function);
+  transition: background-color var(--animation-duration) var(--timing-function), color var(--animation-duration) var(--timing-function), box-shadow var(--animation-duration) var(--timing-function), -webkit-box-shadow var(--animation-duration) var(--timing-function);
+}
+
+.work-button--current {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.work-button:hover, .work-button:focus {
+  cursor: pointer;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .hero-section {
   width: 1600px;
   margin-left: auto;
@@ -235,30 +607,6 @@ img {
   text-transform: uppercase;
 }
 
-.hero-button {
-  display: block;
-  padding: 10px 32px;
-  margin: auto;
-  border: none;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  -webkit-transition: background-color var(--animation-duration) var(--timing-function);
-  transition: background-color var(--animation-duration) var(--timing-function);
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: var(--accent-color-hover);
-}
-
 /* -------hero-modal------- */
 .hero-backdrop {
   position: fixed;
@@ -277,11 +625,6 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-}
-
-.hero-backdrop.is-hidden .hero-modal {
-  -webkit-transform: scale(0.9) translate(-50%, -50%);
-          transform: scale(0.9) translate(-50%, -50%);
 }
 
 .hero-modal {
@@ -303,6 +646,11 @@ img {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+.hero-backdrop.is-hidden .hero-modal {
+  -webkit-transform: scale(0.9) translate(-50%, -50%);
+          transform: scale(0.9) translate(-50%, -50%);
 }
 
 .hero-modal__close-btn {
@@ -329,8 +677,7 @@ img {
   transition: outline-color var(--animation-duration) var(--timing-function);
 }
 
-.hero-modal__close-btn:hover,
-.hero-modal__close-btn:focus {
+.hero-modal__close-btn:hover, .hero-modal__close-btn:focus {
   outline-color: var(--accent-color);
 }
 
@@ -385,26 +732,23 @@ img {
   border-width: 2px;
 }
 
-.form-item-wrap__input:focus + .form-item-wrap__icon {
-  fill: var(--accent-color);
-}
-
-.form-item-wrap__icon {
-  fill: var(--title-text-color);
-  -webkit-transition: fill var(--animation-duration) var(--timing-function);
-  transition: fill var(--animation-duration) var(--timing-function);
-}
-
-.form-item-wrap {
-  position: relative;
-}
-
 .form-item-wrap__icon {
   position: absolute;
   top: 50%;
   left: 12px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  fill: var(--title-text-color);
+  -webkit-transition: fill var(--animation-duration) var(--timing-function);
+  transition: fill var(--animation-duration) var(--timing-function);
+}
+
+.form-item-wrap__input:focus + .form-item-wrap__icon {
+  fill: var(--accent-color);
+}
+
+.form-item-wrap {
+  position: relative;
 }
 
 .label-textarea {
@@ -474,16 +818,6 @@ img {
   margin-bottom: 30px;
 }
 
-.policy-label_checkbox:checked + .policy-label__checkbox-new {
-  fill: var(--primary-white-color);
-  background-color: var(--accent-color);
-  border: transparent;
-}
-
-.policy-label_checkbox:focus-visible + .policy-label__checkbox-new {
-  border: 2px solid var(--accent-color);
-}
-
 .policy-label__checkbox-new {
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
@@ -492,6 +826,16 @@ img {
   transition: fill var(--animation-duration) var(--timing-function), background-color var(--animation-duration) var(--timing-function), border-color var(--animation-duration) var(--timing-function);
   fill: transparent;
   background-color: transparent;
+}
+
+.policy-label__checkbox:focus-visible + .policy-label__checkbox-new {
+  border: 2px solid var(--accent-color);
+}
+
+.policy-label__checkbox:checked + .policy-label__checkbox-new {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border: transparent;
 }
 
 .policy-label {
@@ -517,31 +861,6 @@ img {
 }
 
 .policy-link:focus {
-  outline-color: var(--accent-color);
-}
-
-.btn-submit {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  border: none;
-  border-radius: 4px;
-  color: var(--primary-white-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--accent-color);
-  outline-color: transparent;
-  -webkit-transition: outline-color var(--animation-duration) var(--timing-function);
-  transition: outline-color var(--animation-duration) var(--timing-function);
-}
-
-.btn-submit:focus {
   outline-color: var(--accent-color);
 }
 
@@ -734,8 +1053,7 @@ img {
   transition: background-color var(--animation-duration) var(--timing-function), color var(--animation-duration) var(--timing-function);
 }
 
-.team-social__link:hover,
-.team-social__link:focus {
+.team-social__link:hover, .team-social__link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -781,8 +1099,7 @@ img {
   transition: color var(--animation-duration) var(--timing-function), border-color var(--animation-duration) var(--timing-function);
 }
 
-.clients-item__link:hover,
-.clients-item__link:focus {
+.clients-item__link:hover, .clients-item__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -813,27 +1130,6 @@ img {
           align-items: baseline;
 }
 
-.footer-logo {
-  display: block;
-  margin-bottom: 20px;
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 1.19;
-  color: var(--accent-color);
-}
-
-.footer-logo--accent {
-  color: var(--primary-white-color);
-  -webkit-transition: color var(--animation-duration) var(--timing-function);
-  transition: color var(--animation-duration) var(--timing-function);
-}
-
-.footer-logo:hover .footer-logo--accent,
-.footer-logo:focus .footer-logo--accent {
-  color: var(--accent-color);
-}
-
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -853,6 +1149,10 @@ img {
   transition: color var(--animation-duration) var(--timing-function);
 }
 
+.footer-map:hover, .footer-map:focus {
+  color: var(--accent-color);
+}
+
 .footer-contact {
   font-size: 14px;
   line-height: 1.71;
@@ -862,10 +1162,7 @@ img {
   transition: color var(--animation-duration) var(--timing-function);
 }
 
-.footer-map:hover,
-.footer-map:focus,
-.footer-contact:hover,
-.footer-contact:focus {
+.footer-contact:hover, .footer-contact:focus {
   color: var(--accent-color);
 }
 
@@ -916,8 +1213,7 @@ img {
   transition: background-color var(--animation-duration) var(--timing-function);
 }
 
-.footer-social-list__link:hover,
-.footer-social-list__link:focus {
+.footer-social-list__link:hover, .footer-social-list__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -976,38 +1272,13 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.input-wrap__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 200px;
-  height: 50px;
-  margin-left: 12px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87px;
-  letter-spacing: 0.06em;
-  border: none;
-  border-radius: 4px;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
 .send-icon {
   margin-left: 10px;
   fill: var(--primary-white-color);
 }
 
-/* -------PORTPHOLIO------- */
-/* -------Types of work------- */
+/* -------Portpholio------- */
+/* -------works-buttons------- */
 .works-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1018,38 +1289,8 @@ img {
   margin-bottom: 50px;
 }
 
-.work-button-li {
+.work-buttons-item__btn {
   margin-left: 8px;
-}
-
-.work-button {
-  padding: 6px 22px;
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  border: none;
-  border-radius: 4px;
-  -webkit-transition: background-color var(--animation-duration) var(--timing-function), color var(--animation-duration) var(--timing-function), -webkit-box-shadow var(--animation-duration) var(--timing-function);
-  transition: background-color var(--animation-duration) var(--timing-function), color var(--animation-duration) var(--timing-function), -webkit-box-shadow var(--animation-duration) var(--timing-function);
-  transition: background-color var(--animation-duration) var(--timing-function), color var(--animation-duration) var(--timing-function), box-shadow var(--animation-duration) var(--timing-function);
-  transition: background-color var(--animation-duration) var(--timing-function), color var(--animation-duration) var(--timing-function), box-shadow var(--animation-duration) var(--timing-function), -webkit-box-shadow var(--animation-duration) var(--timing-function);
-}
-
-.button-current {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.work-button:hover,
-.work-button:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
 }
 
 /* -------works------- */
@@ -1062,7 +1303,7 @@ img {
   margin-left: auto;
 }
 
-.works-items {
+.works-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1070,16 +1311,16 @@ img {
       flex-wrap: wrap;
 }
 
-.works-backdrop {
+.works-link__backdrop {
   position: relative;
   overflow: hidden;
 }
 
-.works-img {
+.works-card__img {
   display: block;
 }
 
-.works-backdrop-bg {
+.works-backdrop {
   position: absolute;
   -webkit-transform: translateY(0);
           transform: translateY(0);
@@ -1103,7 +1344,13 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
 }
 
-.works-backdrop-text {
+.works-link:hover .works-backdrop,
+.works-link:focus .works-backdrop {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.works-backdrop__text {
   width: 322px;
   font-size: 18px;
   line-height: 1.56;
@@ -1126,26 +1373,19 @@ img {
   transition: box-shadow var(--animation-duration) var(--timing-function), -webkit-box-shadow var(--animation-duration) var(--timing-function);
 }
 
-.works-link:hover,
-.works-link:focus {
+.works-link:hover, .works-link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.works-link:hover .works-backdrop-bg,
-.works-link:focus .works-backdrop-bg {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-}
-
-.works-item-bottom {
+.works-link__bottom {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
 
-.works-title {
+.works-content__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -1155,7 +1395,7 @@ img {
   color: var(--title-text-color);
 }
 
-.works-text {
+.works-content__text {
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-color);
